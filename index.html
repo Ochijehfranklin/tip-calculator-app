@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+ <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="image-of-splitter-logo" class="splitter">
+    </div>
+    <div class="bill-board">
+      <div class="tip-percent">
+        <h3>
+          Bill
+        </h3>
+        <div class="firstInput">
+          <input type="number" class="input billInput" id="billInput" placeholder="0.0"/>
+        </div>
+        <p class="selectTip">Select Tip %</p>
+        <div class="tip-selector">
+          <div class="tipPercent" id="five">5%</div>
+          <div class="tipPercent" id="ten">10%</div>
+          <div class="templateTip tipPercent" id="fifteen">15%</div>
+          <div class="tipPercent" id="twentyFive">25%</div>
+          <div class="tipPercent" id="fifty">50%</div>
+         <section id="customTip">
+           <input class="tip-Custom" id="tipCustom" type="number" placeholder="Custom"/>
+          </section>
+        </div>
+      </div>
+        <section class="noOfPeople">
+          <P>
+            Number of People
+          </P>
+          <p id="error">Can't be zero</p>
+        </section>
+        <input type="number" class="input peopleInput" id="totalPeople" Placeholder="0">
+      </div>
+      <div class="total">
+        <div class="firstTotal">
+         <section class="tipGiven">
+           <P class="TipAmount">Tip Amount</P>
+          <p class="person">/ person</p>
+         </section>
+         <section id="tip-Given" class="tipMount">
+         <span id="dollar">$</span>4.27
+         </section>
+       </div>
+        <div class="Total">
+         <section>
+          <P id="total">Total</P>
+          <p class="person">/ person</p>
+         </section>
+         <section id="totalTip" >
+          <span id="dollar">$</span>32.79
+         </section>
+        </div>
+        <div class="reset">
+          <button id="reset">
+            RESET
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">OCHIJEH FRANKLIN</a>.
+  </div>
+</body>
+<script src="js/app.js" defer></script>
+</html>
